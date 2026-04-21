@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BrotherStack | Web Development Agency</title>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="logo.png">
+
+<style>
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0b1220;
+  color:#e5e7eb;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#0f172a;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 25px;
+  border-bottom:1px solid #1f2937;
+  z-index:1000;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img{
+  width:42px;
+  height:42px;
+  border-radius:8px;
+  object-fit:cover;
+  transition:0.3s ease;
+}
+
+.logo img:hover{
+  transform:scale(1.1) rotate(5deg);
+}
+
+nav a{
+  color:#e5e7eb;
+  margin:0 10px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+header{
+  padding:140px 20px 80px;
+  text-align:center;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+header img{
+  width:180px;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size:52px;
+}
+
+.tagline{
+  color:#93c5fd;
+  margin-top:10px;
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 25px;
+  background:#38bdf8;
+  color:black;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+h2{
+  color:#38bdf8;
+  margin-bottom:20px;
+}
+
+.box{
+  background:#111827;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+
+/* ABOUT IMAGE */
+.about-img{
+  width:100%;
+  max-width:450px;
+  height:250px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-top:15px;
+  display:block;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* PROJECT CARDS */
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card img:hover{
+  transform:scale(1.03);
+}
+
+/* CONTACT LINKS */
+a{
+  color:#38bdf8;
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#94a3b8;
+  border-top:1px solid #1f2937;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">
+    <img src="logo.png" alt="BrotherStack Logo">
+    <strong>BrotherStack</strong>
+  </div>
+
+  <div>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Developer Image">
+
+  <h1>BrotherStack</h1>
+  <p class="tagline">We build modern websites that grow your business</p>
+
+  <a class="btn" href="#contact">Hire Us Now</a>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Us</h2>
+
+<div class="box">
+BrotherStack is a web development brand focused on creating clean and responsive websites.
+</div>
+
+<img class="about-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="About Image">
+
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="grid">
+  <div class="box">Website Design</div>
+  <div class="box">Landing Pages</div>
+  <div class="box">Business Websites</div>
+  <div class="box">Frontend Development</div>
+  <div class="box">Responsive Design</div>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="">
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="box">
+
+📧 Email: 
+<a href="mailto:qasidali044@gmail.com">qasidali044@gmail.com</a>
+<br><br>
+
+💼 Fiverr: 
+<a href="https://www.fiverr.com/qasidali044" target="_blank">Visit Profile</a>
+<br><br>
+
+💻 GitHub: 
+<a href="https://github.com/qasidali044" target="_blank">Visit GitHub</a>
+<br><br>
+
+💬 WhatsApp: 
+<a href="https://wa.me/923710085244" target="_blank">
+Chat on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 BrotherStack. All rights reserved.
+</footer>
+
+</body>
+</html>
